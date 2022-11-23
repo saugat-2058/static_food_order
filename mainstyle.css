@@ -1,0 +1,414 @@
+                                        html {
+                                        scroll-behavior: smooth;
+                                    }
+                                    /*------------------------------------------------------------- CSS Reset ----------------------------------------------*/
+                                    
+                                    * {
+                                        margin: 0;
+                                        padding: 0;
+                                        box-sizing: border-box;
+                                    }
+                                    /*------------------------------------------------------------- Some information ----------------------------------------------*/
+                                    /*------------------------------------------------------------- Here to----------------------------------------------*/
+                                    /* 1rem=16px* */
+                                    /* font-family: 'Kaushan Script', cursive; */
+                                    /*------------------------------------------------------------- Here----------------------------------------------*/
+                                    /*------------------------------------------------------------- CSS variables ----------------------------------------------*/
+                                    /* responsive phones 400p less */
+                                    
+                                    @media only screen and (max-width:400px) {
+                                        #home::before {
+                                            width: 400px;
+                                        }
+                                        #navbar {
+                                            width: 400px;
+                                        }
+                                        #home {
+                                            margin-left: 0px;
+                                            width: 400px;
+                                        }
+                                        #services {
+                                            width: 350px;
+                                            margin-left: 25px;
+                                        }
+                                        .h-primary {
+                                            width: 400px;
+                                        }
+                                        #clients {
+                                            width: 400px;
+                                        }
+                                        #client-section {
+                                            width: 400px;
+                                        }
+                                        #Contact {
+                                            width: 400px;
+                                        }
+                                        footer {
+                                            width: 400px;
+                                        }
+                                    }
+                                    
+                                     :root {
+                                        --navbar-ht: 60px;
+                                    }
+                                    /*------------------------------------------------------------- Body----------------------------------------------*/
+                                    
+                                    body {
+                                        /* background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%); */
+                                        opacity: 1;
+                                        z-index: -5;
+                                    }
+                                    /* #home,
+#services,
+#client-section,
+#Contact {
+    /* background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%); */
+                                    /* } */
+                                    /*  */
+                                    /*------------------------------------------------------------- Navigation bar ----------------------------------------------*/
+                                    
+                                    #navbar {
+                                        z-index: 3;
+                                        display: flex;
+                                        align-items: center;
+                                        /* position: relative; */
+                                        position: sticky;
+                                        top: 0;
+                                    }
+                                    
+                                    #navbar::before {
+                                        content: "";
+                                        background-color: #5a4746;
+                                        position: absolute;
+                                        height: 100%;
+                                        width: 100%;
+                                        z-index: -1;
+                                        opacity: 0.5;
+                                        top: 0px;
+                                        left: 0px;
+                                    }
+                                    /*------------------------------------------------------------- Navbar image ----------------------------------------------*/
+                                    
+                                    #profile {
+                                        border: 2px solid rgb(243, 243, 243);
+                                        border-radius: 50px;
+                                        margin: 5px 20px;
+                                    }
+                                    /*------------------------------------------------------------- Navbar list Styling ----------------------------------------------*/
+                                    
+                                    #navbar ul {
+                                        display: flex;
+                                    }
+                                    
+                                    #navbar ul li {
+                                        list-style: none;
+                                        font-size: 1.2rem;
+                                    }
+                                    
+                                    #navbar ul li a {
+                                        display: block;
+                                        text-decoration: none;
+                                        padding: 0.3rem 1rem;
+                                        border-radius: 20px;
+                                        color: white;
+                                        font-family: 'Lobster', cursive;
+                                    }
+                                    
+                                    #navbar ul li a:hover {
+                                        color: black;
+                                        background-color: white;
+                                        text-decoration: none;
+                                    }
+                                    /*-------------------------------------------------------------Home Section ----------------------------------------------*/
+                                    
+                                    #home {
+                                        display: flex;
+                                        flex-direction: column;
+                                        padding: 3px 200px;
+                                        justify-content: center;
+                                        align-items: center;
+                                        height: 490px;
+                                    }
+                                    
+                                    #home::before {
+                                        content: "";
+                                        background: url('img/we.jpg') no-repeat center center/cover;
+                                        position: absolute;
+                                        height: 540px;
+                                        width: 100%;
+                                        z-index: -1;
+                                        opacity: 0.8;
+                                        top: 0px;
+                                        left: 0px;
+                                    }
+                                    
+                                    #home h1 {
+                                        color: white;
+                                        text-align: center;
+                                        /* font-family: 'Baloo Bhaina 2', cursive; */
+                                        /* width: max-content; */
+                                        /* border: dashed;
+    border-radius: 23px;
+    background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
+*/
+                                    }
+                                    
+                                    #home p {
+                                        color: white;
+                                        text-align: center;
+                                        font-size: 1.2rem;
+                                        font-family: 'Baloo Bhai 2', cursive;
+                                    }
+                                    /*------------------------------------------------------------- Services Section ----------------------------------------------*/
+                                    
+                                    #services {
+                                        margin: 0px 15px 20px 15px;
+                                        display: flex;
+                                    }
+                                    
+                                    #services .box {
+                                        border: 2px solid blueviolet;
+                                        margin: 10px 5px;
+                                        border-radius: 30px;
+                                        height: 500px;
+                                        width: 350px;
+                                        margin-left: 100px;
+                                        padding: 20px;
+                                        background-color: #fff0f3;
+                                        /* background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c); */
+                                        /* background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
+                                    }
+                                    
+                                    #services p {
+                                        font-family: 'Baloo Bhai 2', cursive;
+                                        height: 400px;
+                                    }
+                                    
+                                    #services .box img {
+                                        height: 100px;
+                                        display: block;
+                                        margin: auto;
+                                    }
+                                    /* #services-container  h1{
+    /* border: dashed; */
+                                    /* background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c); */
+                                    /* border-radius: 0px 0px 50px 50px; */
+                                    /* } */
+                                    /*-------------------------------------------------------------Client Section ----------------------------------------------*/
+                                    
+                                    #client-section {
+                                        position: relative;
+                                        height: 900pxpx;
+                                    }
+                                    /* #client-section h1 {
+    border-radius: 0px 0px 50px 50px;
+    border: dashed;
+    /* color: white; */
+                                    /* background-image: radial-gradient(circle, #fd00ff, #a97aff, #2ca3ff, #00bbff, #00c9ff, #00d2f5, #00d9e6, #11ded2, #64dda7, #9cd87f, #cece63, #fbbe5f); */
+                                    
+                                    #client-section::before {
+                                        content: "";
+                                        position: absolute;
+                                        background: url('img/clt.jpg');
+                                        height: 100%;
+                                        width: 100%;
+                                        z-index: -1;
+                                        opacity: 0.3;
+                                        top: 0;
+                                        left: 0px;
+                                    }
+                                    
+                                    #clients {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        flex-direction: column;
+                                    }
+                                    
+                                    .client-item {
+                                        padding: 20px;
+                                    }
+                                    
+                                    #clients img {
+                                        height: 150px;
+                                    }
+                                    /*-------------------------------------------------------------Contact Section ----------------------------------------------*/
+                                    
+                                    #Contact {
+                                        position: relative;
+                                    }
+                                    /* 
+#Contact h1 {
+    border: dashed;
+    /* background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
+                                    /* border-radius: 0px 0px 50px 50px; */
+                                    /* } */
+                                    
+                                    #Contact::before {
+                                        content: "";
+                                        background: url('img/ct.jpg');
+                                        position: absolute;
+                                        height: 100%;
+                                        width: 100%;
+                                        z-index: -1;
+                                        opacity: 0.5;
+                                    }
+                                    
+                                    #contact-box {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        padding: 23px;
+                                    }
+                                    
+                                    #contact-box input,
+                                    #contact-box textarea {
+                                        width: 100%;
+                                        padding: 0.5rem;
+                                        border-radius: 10px;
+                                        font-size: 1.2rem;
+                                    }
+                                    
+                                    #contact-box form {
+                                        width: 40%;
+                                    }
+                                    
+                                    #contact-box label {
+                                        font-size: 1.2rem;
+                                        font-family: 'Kaushan Script', cursive;
+                                    }
+                                    
+                                    #sub {
+                                        cursor: pointer;
+                                        width: 100px;
+                                        border: 4px solid brown;
+                                        border-radius: 23px;
+                                        height: 38px;
+                                        /* background-color: #663811; */
+                                        background-image: linear-gradient(to right top, #ff7800, #ff612c, #ff4846, #ff2e5e, #ff1676, #ff3067, #ff445a, #ff554e, #f68724, #d9b40d, #abdb45, #5ffb90);
+                                    }
+                                    /* color: white;
+font-family: 'Baloo Bhai 2',
+cursive;
+box-shadow: 5px 5px 3px black; */
+                                    /* /} */
+                                    
+                                    input::placeholder {
+                                        text-align: center;
+                                        color: rgb(36, 26, 63);
+                                    }
+                                    /* input {
+    background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
+}
+
+textarea {
+    background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
+} */
+                                    /*-------------------------------------------------------------Footer ----------------------------------------------*/
+                                    
+                                    footer {
+                                        /* background-color: black; */
+                                        background-image: radial-gradient(circle, #00ffde, #05e1d0, #21c4be, #34a7a9, #3f8b91, #3d8c8d, #3d8c89, #3e8d84, #50a985, #7bc37b, #b5d96b, #fbe95f);
+                                        opacity: 0.8;
+                                        color: white;
+                                        height: 50px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        /* padding: 0px 70px; */
+                                    }
+                                    /*-------------------------------------------------------------Utility Class ----------------------------------------------*/
+                                    
+                                    .h-primary {
+                                        font-size: 3.5rem;
+                                        /* padding: 2px 4px; */
+                                        font-family: 'Baloo Bhai 2', cursive;
+                                        /* background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
+    border: 4px solid olivedrab; */
+                                        /* background: linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%);
+     */
+                                        /* background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    border: 4px solid olive;
+    border-radius: 23px; */
+                                    }
+                                    
+                                    .h-secondary {
+                                        font-size: 2.3rem;
+                                        padding: 8px;
+                                        font-family: 'Kaushan Script', cursive;
+                                    }
+                                    
+                                    .btn {
+                                        padding: 6px 15px;
+                                        /* border-radius: 1rem 0rem; */
+                                        border-radius: 1rem;
+                                        border: 2px solid whitesmoke;
+                                        cursor: pointer;
+                                        /* background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%); */
+                                        background-color: rgb(142, 80, 0);
+                                        color: rgb(255, 255, 255);
+                                        font-family: 'Baloo Bhai 2', cursive;
+                                        font-size: 1rem;
+                                    }
+                                    .flex{
+                                        display: flex;
+                                    }
+                                    
+                                    .btn:hover {
+                                        color: rgb(136, 255, 0);
+                                        background: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+                                        box-shadow: 5px 5px 3px black;
+                                    }
+                                    
+                                    .center {
+                                        text-align: center;
+                                    }
+                                    
+                                    .active {
+                                        text-decoration: underline;
+                                    }
+                                    /* for phones */
+                                    
+                                    @media only screen and (max-width:800px) {
+                                        /*------------------------------------------------------------- Navbar list Styling ----------------------------------------------*/
+                                        #navbar {
+                                            flex-direction: column;
+                                        }
+                                        #navbar ul li a {
+                                            font-size: 1rem;
+                                            padding: 0px 7px;
+                                        }
+                                        /*-------------------------------------------------------------Home Section ----------------------------------------------*/
+                                        #home {
+                                            height: 400px;
+                                            padding: 3px 20px;
+                                        }
+                                        #home::before {
+                                            height: 480px;
+                                        }
+                                        #home h1 {
+                                            margin-top: -70px;
+                                        }
+                                        #home p {
+                                            font-size: 13px;
+                                        }
+                                        /*------------------------------------------------------------- Services Section ----------------------------------------------*/
+                                        #services {
+                                            flex-direction: column;
+                                        }
+                                        /*-------------------------------------------------------------Client Section ----------------------------------------------*/
+                                        /*-------------------------------------------------------------Contact Section ----------------------------------------------*/
+                                        #contact-box input,
+                                        #contact-box textarea {
+                                            width: 140%;
+                                        }
+                                        /*-------------------------------------------------------------Utility Section ----------------------------------------------*/
+                                        .h-primary {
+                                            font-size: 2rem;
+                                        }
+                                        .btn {
+                                            height: 30px;
+                                            font-size: 12px;
+                                            width: 90px;
+                                            padding: 1px 7px;
+                                        }
